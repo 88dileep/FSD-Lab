@@ -1,46 +1,18 @@
-p {
-    color: blue;
-}
-#main-title {
-    color: red;
-}
-.highlight {
-    background-color: yellow;
-}
-h1, h2 {
-    font-family: Arial;
-}
-* {
-    margin: 5px;
-}
-div p {
-    color: green;
-}
-div > span {
-    color: purple;
-}
-section p + p {
-    color: orange;
-}
-section p ~ p {
-    background-color: lightgray;
-}
-a:hover {
-    color: pink;
-}
-li:first-child {
-    font-weight: bold;
-}
-li:last-child {
-    font-style: italic;
-}
-.hover-test:hover {
-    background-color: lightblue;
-}
-.first-line-test::first-line {
-    text-transform: uppercase;
-}
-input[type="text"] {
-    border: 2px solid black;
-    padding: 5px;
-}
+/* Simple Selectors */
+p { color: blue; }            /* Element */
+#one { color: green; }        /* ID */
+.two { color: red; }          /* Class */
+h1, h2 { color: purple; }     /* Group */
+* { font-family: Arial; }     /* Universal */
+
+/* Combinator Selectors */
+div p { color: brown; }       /* Descendant */
+div > span > p { color: orange; }  /* Child */
+h3 + p { color: teal; }       /* Adjacent Sibling */
+h3 ~ p { font-style: italic; }/* General Sibling */
+
+/* Pseudo-class */
+a:hover { color: red; }
+
+/* Pseudo-element */
+p::first-letter { color: darkred; font-size: 20px; }
