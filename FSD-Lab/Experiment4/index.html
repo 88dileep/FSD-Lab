@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>CSS Selector Forms</title>
-<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector Types</title>
+  <link rel="stylesheet" href="selectors.css">
 </head>
 <body>
-<h1 id="main-title">Simple Selector - ID</h1>
-<p class="highlight">Simple Selector - Class</p>
-<p>Simple Selector - Element</p>
-<h2>Group Selector Example</h2>
-<div>
-<p>This is inside a div - descendant selector test</p>
-<span>Child selector test</span>
-</div>
-<section>
-<p>Adjacent sibling selector test</p>
-<p>General sibling selector test</p>
-</section>
-<a href="https://example.com" target="_blank">Example Link</a>
-<ul>
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ul>
-<p class="hover-test">Hover over me</p>
-<p class="first-line-test">This paragraph demonstrates pseudo-element selector first-line effect with some extra text for visibility.</p>
-<input type="text" placeholder="Attribute selector test">
+
+  <h1>Different Types of CSS Selectors</h1>
+
+  <!-- Simple selectors -->
+  <p>This is an example of <strong>element selector</strong>.</p>
+  <p id="special">This uses an <strong>ID selector</strong>.</p>
+  <p class="highlight">This uses a <strong>class selector</strong>.</p>
+  <h2>Heading grouped with paragraph (Group selector)</h2>
+
+  <!-- Combinator selectors -->
+  <div>
+    <h3>Inside a Div</h3>
+    <p>This paragraph is a <strong>descendant</strong> of div.</p>
+    <span><p>This is a <strong>child</strong> paragraph.</p></span>
+  </div>
+
+  <h4>Adjacent Sibling Example</h4>
+  <p>This paragraph is directly after h4 (Adjacent sibling).</p>
+  <p>This paragraph is a <strong>general sibling</strong> after h4.</p>
+
+  <!-- Pseudo class and element -->
+  <a href="#">Hover over this link</a>
+
+  <div class="box">
+    <p>First paragraph inside box.</p>
+    <p>Second paragraph inside box.</p>
+  </div>
+
 </body>
 </html>
