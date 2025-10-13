@@ -1,39 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Frames Example - All in One</title>
+    <title>Frames Example</title>
 </head>
 <frameset rows="30%,40%,30%">
-    <frame name="frame1" srcdoc='
-        <!DOCTYPE html>
-        <html>
-        <body style="text-align:center;">
-            <h3>Image Frame</h3>
-            <img src="https://via.placeholder.com/300x150" alt="Sample Image">
-        </body>
-        </html>
-    
-    <frame name="frame2" srcdoc='
-        <!DOCTYPE html>
-        <html>
-        <body style="padding:20px; font-family:Arial;">
-            <h3>Paragraph Frame</h3>
-            <p>
-                This is a sample paragraph displayed in the second frame. 
-                Frames allow multiple HTML documents to be displayed in a single window.
-            </p>
-        </body>
-        </html>'>
-    
-    <frame name="frame3" srcdoc='
-        <!DOCTYPE html>
-        <html>
-        <body style="text-align:center; padding-top:20px;">
-            <h3>Hyperlink Frame</h3>
-            <a href="https://www.example.com" target="_blank">Visit Example.com</a>
-        </body>
-        </html>'>
-
+    <frame src="image.html" name="frame1">
+    <frame src="paragraph.html" name="frame2">
+    <frame src="link.html" name="frame3">
     <noframes>
         <body>
             <p>Your browser does not support frames. Please update your browser.</p>
