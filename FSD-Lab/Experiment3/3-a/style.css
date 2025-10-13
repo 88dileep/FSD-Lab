@@ -1,70 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
 }
 
-/* Header */
-header {
-    background: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
+header, footer {
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
-/* Navigation */
 nav {
-    background: #333;
-    padding: 8px;
-    text-align: center;
+  background-color: #005b99;
+  text-align: center;
+  padding: 8px;
 }
+
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-nav a:hover {
-    text-decoration: underline;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-/* Main Layout */
 main {
-    display: flex;
-    margin-top: 10px;
+  display: flex;
+  padding: 20px;
 }
 
-/* Article */
 article {
-    flex: 3;
-    background: white;
-    padding: 10px;
+  flex: 3;
+  background-color: white;
+  padding: 15px;
+  margin-right: 15px;
+  border-radius: 8px;
 }
 
-/* Aside */
 aside {
-    flex: 1;
-    background: #e7f3fe;
-    padding: 10px;
-    margin-left: 10px;
+  flex: 1;
+  background-color: #e0ebf5;
+  padding: 15px;
+  border-radius: 8px;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 10px;
+figure {
+  text-align: center;
 }
 
-/* Highlight text */
-.highlight {
-    color: blue;
-    font-weight: bold;
-}
-
-/* Figure caption */
 figcaption {
-    font-style: italic;
-    color: #555;
+  color: gray;
+  font-size: 14px;
+}
+
+.highlight {
+  color: #007acc;
 }

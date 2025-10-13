@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HTML5 Tags Example</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Semantic Tags Example</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking external CSS -->
 </head>
 <body>
 
-<header>
-    <h2>My Web Page</h2>
-</header>
+  <header>
+    <h1>My Website</h1>
+  </header>
 
-<nav>
+  <nav>
     <a href="#">Home</a>
+    <a href="#">Articles</a>
     <a href="#">About</a>
-    <a href="#">Contact</a>
-</nav>
+  </nav>
 
-<main>
+  <main>
     <article>
-        <section>
-            <h3>About HTML5</h3>
-            <p>HTML5 includes <span class="highlight">semantic tags</span> for better structure.</p>
-        </section>
+      <h2>HTML5 Semantic Elements</h2>
+      <p>HTML5 provides new tags like <span class="highlight">&lt;article&gt;</span>, <span class="highlight">&lt;aside&gt;</span>, and <span class="highlight">&lt;section&gt;</span> to structure web pages clearly.</p>
 
+      <section>
+        <h3>Example Figure</h3>
         <figure>
-            <img src="https://via.placeholder.com/250x120" alt="Sample">
-            <figcaption>Example of &lt;figure&gt; and &lt;figcaption&gt;</figcaption>
+          <img src="https://via.placeholder.com/200" alt="Sample Image">
+          <figcaption>This is a sample image with caption.</figcaption>
         </figure>
+      </section>
     </article>
 
     <aside>
-        <h4>Side Info</h4>
-        <p>HTML5 helps organize web content easily.</p>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
     </aside>
-</main>
+  </main>
 
-<footer>
-    <p>&copy; 2025 <span class="highlight">My Website</span></p>
-</footer>
+  <footer>
+    <p>© 2025 My Website | Designed by Student</p>
+  </footer>
 
 </body>
 </html>
