@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Object Example</title>
+  <script>
+    const pageInfo = {
+      originalTitle: document.title,
+      url: document.URL,
+      domain: document.domain,
+      changeTitle: function(newTitle) {
+        document.title = newTitle;
+      },
+      changeBackgroundColor: function(color) {
+        document.body.style.backgroundColor = color;
+      },
+      displayInfo: function() {
+        let outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `
+          <p><strong>Original Title:</strong> ${this.originalTitle}</p>
+          <p><strong>URL:</strong> ${this.url}</p>
+          <p><strong>Domain:</strong> ${this.domain}</p>
+        `;
+      }
+    };
+
+    function updatePage() {
+      pageInfo.changeTitle("Updated Page Title");
+      pageInfo.changeBackgroundColor("#e0ffe0");
+      pageInfo.displayInfo();
+
+      let newPara = document.createElement("p");
+      newPara.textContent = "New paragraph added by user-defined object.";
+      document.body.appendChild(newPara);
+    }
+  </script>
+</head>
+<body>
+  <h1>Pre-defined and User-defined Objects Demo</h1>
+  <button onclick="updatePage()">Update Page Info</button>
+  <div id="output" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px;"></div>
+</body>
+</html>
