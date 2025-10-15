@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Date Object Demo</title></head>
+<body>
+  <h2>Date Object Properties and Methods</h2>
+  <button onclick="dateDemo()">Show Date Info</button>
+  <div id="dateOutput"></div>
+
+  <script>
+    function dateDemo() {
+      let now = new Date();
+
+      let output = "Current Date and Time: " + now.toString() + "<br>";
+      output += "Year: " + now.getFullYear() + "<br>";
+      output += "Month: " + (now.getMonth() + 1) + "<br>"; 
+      output += "Date: " + now.getDate() + "<br>";
+      output += "Day of Week: " + now.getDay() + "<br>";
+      output += "Hours: " + now.getHours() + "<br>";
+      output += "Minutes: " + now.getMinutes() + "<br>";
+      output += "Seconds: " + now.getSeconds() + "<br>";
+
+      document.getElementById("dateOutput").innerHTML = output;
+    }
+  </script>
+</body>
+</html>

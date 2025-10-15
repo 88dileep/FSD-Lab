@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Array Object Demo</title></head>
+<body>
+  <h2>Array Properties and Methods</h2>
+  <button onclick="arrayDemo()">Run Array Demo</button>
+  <div id="arrayOutput"></div>
+
+  <script>
+    function arrayDemo() {
+      let fruits = ["Apple", "Kiwi", "Jackfruit", "Pear"];
+      fruits.push("Grapes");
+      fruits.sort();
+
+      let output = "Fruits: " + fruits.join(", ") + "<br>";
+      output += "Number of fruits: " + fruits.length + "<br>";
+      output += "First fruit: " + fruits[0] + "<br>";
+      output += "Removed last fruit: " + fruits.pop() + "<br>";
+      output += "Now fruits: " + fruits.join(", ");
+
+      document.getElementById("arrayOutput").innerHTML = output;
+    }
+  </script>
+</body>
+</html>

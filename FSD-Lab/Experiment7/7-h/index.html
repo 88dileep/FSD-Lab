@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>User-defined Object Demo</title></head>
+<body>
+  <h2>User-defined Object with Properties, Methods, Accessors, and Constructor</h2>
+  <button onclick="userObjectDemo()">Show User Object Info</button>
+  <div id="userOutput"></div>
+
+  <script>
+   
+    function Person(firstName, lastName, age) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.age = age;
+
+      this.fullName = function() {
+        return this.firstName + " " + this.lastName;
+      };
+
+      
+      Object.defineProperty(this, 'info', {
+        get: function() {
+          return this.fullName() + ", Age: " + this.age;
+        }
+      });
+    }
+
+    function userObjectDemo() {
+      let person1 = new Person("Rama", "Krishna", 30);
+
+      let output = "First Name: " + person1.firstName + "<br>";
+      output += "Last Name: " + person1.lastName + "<br>";
+      output += "Age: " + person1.age + "<br>";
+      output += "Full Name (method): " + person1.fullName() + "<br>";
+      output += "Info (accessor): " + person1.info;
+
+      document.getElementById("userOutput").innerHTML = output;
+    }
+  </script>
+</body>
+</html>

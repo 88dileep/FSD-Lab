@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>String Object Demo</title></head>
+<body>
+  <h2>String Properties and Methods</h2>
+  <button onclick="stringDemo()">Run String Demo</button>
+  <div id="stringOutput"></div>
+
+  <script>
+    function stringDemo() {
+      let str = "Dileep narsupalli";
+      let output = "Original string: " + str + "<br>";
+      output += "Length: " + str.length + "<br>";
+      output += "Uppercase: " + str.toUpperCase() + "<br>";
+      output += "Lowercase: " + str.toLowerCase() + "<br>";
+      output += "Character at index 7: " + str.charAt(7) + "<br>";
+      output += "Substring (7, 17): " + str.substring(7, 17);
+
+      document.getElementById("stringOutput").innerHTML = output;
+    }
+  </script>
+</body>
+</html>

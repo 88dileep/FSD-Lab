@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title>RegExp Object Demo</title></head>
+<body>
+  <h2>RegExp Properties and Methods</h2>
+  <button onclick="regexDemo()">Run RegExp Demo</button>
+  <div id="regexOutput"></div>
+
+  <script>
+    function regexDemo() {
+      let pattern = /javascript/i; 
+      let text = "Life is a race.";
+
+      let testResult = pattern.test(text);
+      let matchResult = text.match(pattern);
+
+      let output = "Text: " + text + "<br>";
+      output += "Pattern: /javascript/i<br>";
+      output += "Test result: " + testResult + "<br>";
+      output += "Match result: " + matchResult + "<br>";
+
+
+      let replacedText = text.replace(pattern, "JS");
+      output += "After replace: " + replacedText;
+
+      document.getElementById("regexOutput").innerHTML = output;
+    }
+  </script>
+</body>
+</html>

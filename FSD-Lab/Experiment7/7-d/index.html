@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Math Object Demo</title></head>
+<body>
+  <h2>Math Object Properties and Methods</h2>
+  <button onclick="mathDemo()">Run Math Demo</button>
+  <div id="mathOutput"></div>
+
+  <script>
+    function mathDemo() {
+      let num = -7.8;
+      let output = "Absolute value of " + num + " is " + Math.abs(num) + "<br>";
+      output += "Rounded value of " + num + " is " + Math.round(num) + "<br>";
+      output += "Random number between 0 and 1: " + Math.random() + "<br>";
+      output += "Square root of 16: " + Math.sqrt(16) + "<br>";
+      output += "Value of PI: " + Math.PI;
+
+      document.getElementById("mathOutput").innerHTML = output;
+    }
+  </script>
+</body>
+</html>
