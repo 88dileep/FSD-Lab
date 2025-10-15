@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Input Methods</title>
+</head>
+<body>
+    <h2>Different Ways of Taking Input</h2>
+    <p id="result"></p>
+
+    <script>
+        let name = prompt("Enter your name:");
+        let confirmBox = confirm("Do you want to continue?");
+        if (confirmBox) {
+            document.getElementById("result").innerHTML = 
+            "Hello " + name + "! You clicked OK.";
+        } else {
+            document.getElementById("result").innerHTML = 
+            "You clicked Cancel.";
+        }
+    </script>
+</body>
+</html>
